@@ -5,16 +5,16 @@ class UserService {
         return new User(id,username,name, "Sin Bio")
     } 
 
-    static getInfo (){
-        return [1, "Drojann","Alejandro","Sin Bio"]
+    static getInfo (user){
+        return [user.id, user.username, user.name, user ="Sin Bio"]
     }
 
     static updateUserUsername (user, newUser){
         return user.username = newUser
     }
 
-    static getAllUsernames (usernames){
-        return usernames = (["Drojann","Drojann0","Drojan"])
+    static getAllUsernames ([user1, user2, user3]){
+        return ([user1.username, user2.username, user3.username])
     }
 
 }   
